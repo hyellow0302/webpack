@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- 스크립트 태그 안에 src로 이용해서 불러오는게 아니라 import로 불러옴 (line 13~) -->
     <!-- <script src="./src/hello.js"></script>
     <script src="./src/world.js"></script> -->
   </head>
@@ -9,7 +10,6 @@
     <div id="root"></div>
     <script type="module">
       // 모듈을 사용하고 싶은 script 태그에 type을 모듈로 꼭 해줘야한다.
-      // 스크립트 태그 안에 src로 이용해서 불러오는게 아니라 import로 불러옴
       import hello_word from "./src/hello.js";
       import world_word from "./src/world.js";
       document.querySelector("#root").innerHTML = hello_word + " " + world_word;
