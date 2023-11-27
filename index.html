@@ -8,12 +8,6 @@
   <body>
     <h1>Hello, Webpack</h1>
     <div id="root"></div>
-    <script type="module">
-      // 모듈을 사용하고 싶은 script 태그에 type을 모듈로 꼭 해줘야한다.
-      import hello_word from "./src/hello.js";
-      import world_word from "./src/world.js";
-      document.querySelector("#root").innerHTML = hello_word + " " + world_word;
-      // document.querySelector("#root").innerHTML = word; // 같은 이름을 사용하였기때문에 충돌 발생
-    </script>
+    <script src="./public/index_bundle.js"></script>
   </body>
 </html>
